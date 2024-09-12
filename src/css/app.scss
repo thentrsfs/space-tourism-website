@@ -1,0 +1,91 @@
+// app global css in SCSS form
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('src/fonts/Barlow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BarlowCondensed-Regular';
+    src: url('src/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bellefair-Regular';
+    src: url('src/fonts/Bellefair-Regular.ttf') format('truetype');
+}
+
+.q-drawer{
+  background-color: rgba(52, 62, 70, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.custom-btn{
+  font-family: 'BarlowCondensed-Regular',sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 3px solid rgb(255, 255, 255, 0.0);
+  font-size: 18px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+.custom-btn:hover {
+border-color:rgb(255, 255, 255, 0.5) ;
+color: white;
+transition: 0.5s ease-in-out;
+}
+
+.active-btn {
+  border-color:rgb(255, 255, 255) ;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.active-btn:hover {
+  border-color:rgb(255, 255, 255) ;
+}
+
+.headline{
+  font-family: 'BarlowCondensed-Regular', sans-serif;
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.page-number{
+  letter-spacing: 5px;
+  margin-right: 20px;
+  color: rgb(95, 95, 95);
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.q-btn .q-focus-helper {
+    display: none;
+  }
+  
+.q-layout{
+  transition: background 0.5s ease-in-out;
+}
+
+.text-preset7 {
+  font-family: 'Bellefair-Regular', sans-serif;
+  font-size: 28px;
+}
+
+.text-preset8 {
+  font-family: 'BarlowCondensed-Regular', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: $secondary;
+}
+
+.text-preset9{
+  font-family: 'Barlow-Regular', sans-serif; 
+  font-size: 18px;
+  color: $secondary;
+  line-height:180% ;
+}
+
+.title {
+  font-family: 'Bellefair-Regular', sans-serif;
+}
