@@ -1,57 +1,158 @@
 // app global css in SCSS form
 
+/*
+Fonts
+*/
+
 @font-face {
-    font-family: 'Barlow-Regular';
-    src: url('src/fonts/Barlow-Regular.ttf') format('truetype');
+  font-family: "Barlow-Regular";
+  src: url("src/fonts/Barlow-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'BarlowCondensed-Regular';
-    src: url('src/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+  font-family: "BarlowCondensed-Regular";
+  src: url("src/fonts/BarlowCondensed-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Bellefair-Regular';
-    src: url('src/fonts/Bellefair-Regular.ttf') format('truetype');
+  font-family: "Bellefair-Regular";
+  src: url("src/fonts/Bellefair-Regular.ttf") format("truetype");
 }
 
-.q-drawer{
+/*
+Drawer
+*/
+
+.q-drawer {
   background-color: rgba(52, 62, 70, 0.3);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
 }
 
-.custom-btn{
-  font-family: 'BarlowCondensed-Regular',sans-serif;
+/*
+Buttons
+*/
+
+.custom-btn {
+  font-family: "BarlowCondensed-Regular", sans-serif;
   letter-spacing: 2px;
-  border-bottom: 3px solid rgb(255, 255, 255, 0.0);
+  border-bottom: 3px solid rgb(255, 255, 255, 0);
   font-size: 18px;
- padding-left: 0px;
- padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .custom-btn:hover {
-border-color:rgb(255, 255, 255, 0.5) ;
-color: white;
-transition: 0.5s ease-in-out;
+  border-color: rgb(255, 255, 255, 0.5);
+  color: white;
+  transition: 0.5s ease-in-out;
 }
 
 .active-btn {
-  border-color:rgb(255, 255, 255) ;
+  border-color: rgb(255, 255, 255);
   color: white;
   transition: 0.5s ease-in-out;
 }
 .active-btn:hover {
-  border-color:rgb(255, 255, 255) ;
+  border-color: rgb(255, 255, 255);
 }
 
-.headline{
-  font-family: 'BarlowCondensed-Regular', sans-serif;
+.q-btn .q-focus-helper {
+  display: none;
+}
+
+.explore-btn {
+  padding: 110px 70px 110px 70px;
+  margin-top: 18rem;
+  font-family: "Bellefair-Regular", sans-serif;
+  font-size: 34px;
+  background-color: rgb(255, 255, 255);
+}
+
+.explore-btn:hover {
+  box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.page-buttons {
+  position: absolute;
+  bottom: 70px; /* Fixed position at the bottom of the wrapper */
+  left: 50%;
+  transform: translateX(-215%);
+}
+.page-btn {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+.page-btn.active {
+  background-color: white;
+}
+.page-btn.active:hover {
+  background-color: white;
+}
+.page-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-button-launch {
+  border: 1px solid rgb(106, 106, 106);
+  color: white;
+  font-family: "Bellefair-Regular", sans-serif;
+}
+
+.custom-button-launch:hover {
+  border-color: white;
+  transition: 0.8s ease;
+}
+
+.active-button-launch {
+  background-color: white;
+  color: black;
+}
+
+/*
+Images
+*/
+
+.q-layout {
+  transition: background 0.5s ease-in-out;
+}
+
+.img-planet {
+  margin-top: 120px;
+  max-width: 550px;
+}
+
+.img-space-launch {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  margin-top: 120px;
+}
+
+.img-crew-container {
+  width: 550px;
+  height: 650px;
+}
+
+.img-crew-container-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 120px;
+}
+
+/* 
+Text
+*/
+
+.headline {
+  font-family: "BarlowCondensed-Regular", sans-serif;
   letter-spacing: 4px;
   font-size: 30px;
   margin-top: 60px;
 }
 
-.page-number{
+.page-number {
   letter-spacing: 5px;
   margin-right: 20px;
   color: rgb(95, 95, 95);
@@ -59,33 +160,321 @@ transition: 0.5s ease-in-out;
   font-weight: bold;
 }
 
-.q-btn .q-focus-helper {
-    display: none;
-  }
-  
-.q-layout{
-  transition: background 0.5s ease-in-out;
-}
-
 .text-preset7 {
-  font-family: 'Bellefair-Regular', sans-serif;
+  font-family: "Bellefair-Regular", sans-serif;
   font-size: 28px;
 }
 
 .text-preset8 {
-  font-family: 'BarlowCondensed-Regular', sans-serif;
+  font-family: "BarlowCondensed-Regular", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
   color: $secondary;
 }
 
-.text-preset9{
-  font-family: 'Barlow-Regular', sans-serif; 
+.text-preset9 {
+  font-family: "Barlow-Regular", sans-serif;
   font-size: 18px;
   color: $secondary;
-  line-height:180% ;
+  line-height: 180%;
 }
 
 .title {
-  font-family: 'Bellefair-Regular', sans-serif;
+  font-family: "Bellefair-Regular", sans-serif;
+}
+
+.home-paragraph {
+  font-size: 22px;
+}
+
+.home-text {
+  margin-top: 20rem;
+  margin-left: 10rem;
+}
+
+.space {
+  font-family: "Bellefair-Regular", sans-serif;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  letter-spacing: 4px;
+  color: white;
+  font-size: 130px;
+}
+
+.text-intro {
+  max-width: 540px;
+  font-family: "BarlowCondensed-Regular", sans-serif;
+}
+.text-intro.mobile {
+  font-family: "BarlowCondensed-Regular", sans-serif;
+}
+
+.planets-text-container {
+  max-width: 570px;
+}
+
+.planets-info-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 270px;
+}
+
+.info-container {
+  flex-wrap: nowrap;
+  max-width: 550px;
+}
+
+.crew-title {
+  margin-top: 160px;
+}
+/* 
+Responsive styles 
+*/
+
+// Mobile
+
+body.screen--xs {
+  .explore-btn-mobile {
+    position: absolute;
+    bottom: 15%; /* Fixed position at the bottom of the wrapper */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 27px 50px 27px;
+    font-family: "Bellefair-Regular", sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .space.mobile {
+    font-family: "Bellefair-Regular", sans-serif;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 90px;
+  }
+
+  .home-paragraph.mobile {
+    width: 330px;
+    font-size: 18px;
+  }
+
+  .home-text-mobile {
+    margin-top: 3rem;
+  }
+
+  .headline.mobile {
+    font-family: "BarlowCondensed-Regular", sans-serif;
+    letter-spacing: 4px;
+    font-size: 18px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-number.mobile {
+    letter-spacing: 5px;
+    margin-right: 20px;
+    color: rgb(95, 95, 95);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .img-planet.mobile {
+    margin-top: 50px;
+    max-width: 200px;
+  }
+
+  .planets-text-container.mobile {
+    align-items: center;
+  }
+
+  .title.mobile {
+    font-family: "Bellefair-Regular", sans-serif;
+    font-size: 70px;
+  }
+
+  .text-preset9.mobile {
+    font-family: "Barlow-Regular", sans-serif;
+    font-size: 16px;
+    color: $secondary;
+    line-height: 180%;
+  }
+
+  .planets-info-container.mobile {
+    gap: 30px;
+  }
+
+  .crew-title.mobile {
+    font-size: 22px;
+    margin-top: 60px;
+  }
+
+  .crew-name-mobile {
+    font-size: 25px;
+  }
+
+  .info-container.mobile {
+    height: 430px;
+    width: 320px;
+  }
+
+  .img-crew-container.mobile {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  .img-crew-container-img.mobile {
+    max-width: 280px;
+    max-height: 280px;
+    object-fit: contain;
+    overflow: hidden;
+    margin-top: 10%;
+  }
+
+  .img-space-launch.mobile {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    margin-top: 70px;
+  }
+}
+
+// Tablet
+
+body.screen--sm {
+  .explore-btn-tablet {
+    position: absolute;
+    bottom: 15%; /* Fixed position at the bottom of the wrapper */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 110px 68px 110px 68px;
+    font-family: "Bellefair-Regular", sans-serif;
+    font-size: 34px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .home-paragraph.tablet {
+    width: 650px;
+    font-size: 22px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .home-text-tablet {
+    margin-top: 6rem;
+  }
+
+  .space.tablet {
+    font-family: "Bellefair-Regular", sans-serif;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 180px;
+  }
+
+  .headline.tablet {
+    font-family: "BarlowCondensed-Regular", sans-serif;
+    letter-spacing: 4px;
+    font-size: 26px;
+    position: absolute;
+    left: 4rem;
+  }
+
+  .page-number.tablet {
+    letter-spacing: 5px;
+    margin-right: 20px;
+    color: rgb(95, 95, 95);
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .img-planet.tablet {
+    margin-top: 200px;
+  }
+
+  .planets-text-container.tablet {
+    max-width: 600px;
+    align-items: center;
+  }
+  .planets-info-container.tablet {
+    max-width: 500px;
+    gap: 35px;
+  }
+
+  .text-preset7.tablet {
+    font-family: "Bellefair-Regular", sans-serif;
+    font-size: 32px;
+  }
+
+  .text-preset8.tablet {
+    font-family: "BarlowCondensed-Regular", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: $secondary;
+  }
+
+  .text-preset9.mobile {
+    font-family: "Barlow-Regular", sans-serif;
+    font-size: 22px;
+    color: $secondary;
+    line-height: 180%;
+  }
+
+  .custom-btn.tablet {
+    font-family: "BarlowCondensed-Regular", sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 3px solid rgb(255, 255, 255, 0);
+    font-size: 22px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .active-btn.tablet {
+    border-color: rgb(255, 255, 255);
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+
+  .info-container.tablet {
+    max-width: 550px;
+    height: 500px;
+  }
+
+  .img-crew-container.tablet {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-crew-container-img.tablet {
+    max-width: 398px;
+    max-height: 398px;
+    object-fit: contain;
+    overflow: hidden;
+    margin-top: 10%;
+  }
+
+  .crew-title.tablet {
+    font-size: 25px;
+    margin-top: 135px;
+  }
+
+  .crew-name-tablet {
+    font-size: 40px;
+  }
+
+  .page-buttons.tablet {
+    position: relative;
+    display: flex;
+  }
+
+  .img-space-launch.tablet {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    margin-top: 150px;
+  }
 }
